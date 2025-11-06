@@ -1,7 +1,10 @@
 <<__EntryPoint>>
 function main(): void {
   print("Hello, World!\n");
-  print("Fibonacci of 10 is " . fibonacci(10));
+  
+  $n = (int) (vec(\HH\global_get('argv') as Container<_>)[1] ?? 10);
+  echo 'The ' . $n . ' number in fibonacci is: ' . fibonacci($n) . PHP_EOL;
+  
   exit(0);
 }
 

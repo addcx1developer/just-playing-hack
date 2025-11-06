@@ -30,7 +30,7 @@ cli:
 	@docker run --rm -it \
 	  -v $(PROJECT_DIR):/var/www \
 	  --user hhvmuser \
-	  $(IMAGE_NAME) hhvm main.hack
+	  $(IMAGE_NAME) hhvm main.hack $(ARGS)
 
 # ------------------------
 # Stop and remove container
